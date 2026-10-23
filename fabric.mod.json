@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "testmod",
+  "version": "${version}",
+  "name": "Test Mod",
+  "description": "Gives the player Night Vision when joining the world.",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.testmod.TestMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
