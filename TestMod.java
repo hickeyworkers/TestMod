@@ -9,7 +9,7 @@ public class TestMod implements ModInitializer {
     @Override
     public void onInitialize() {
         ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
-            handler.player.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 1200, 0));
+            handler.getPlayer().addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 1200, 0));
         });
     }
 }
